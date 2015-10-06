@@ -12,9 +12,10 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 3) do
+
   create_table "events", force: :cascade do |t|
     t.string "name"
-    t.date   "dob"
+    t.date   "date"
   end
 
   create_table "people", force: :cascade do |t|
@@ -30,4 +31,5 @@ ActiveRecord::Schema.define(version: 3) do
     t.string  "status"
     t.string  "comment"
   end
+
 end

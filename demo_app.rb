@@ -6,4 +6,6 @@ require './models/event'
 require './models/person'
 require './models/registration'
 
-ActiveRecord::Base.logger.level = 1
+require 'pry-byebug'
+
+# ActiveRecord::Base.logger.level = 1
