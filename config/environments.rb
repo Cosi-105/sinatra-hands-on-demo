@@ -21,4 +21,3 @@ end
 configure :development, :test do
   puts "[develoment or test Environment]"
 end
-

@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 3) do
 
   create_table "events", force: :cascade do |t|
     t.string "name"
-    t.date   "date"
+    t.date   "dob"
   end
 
   create_table "people", force: :cascade do |t|
