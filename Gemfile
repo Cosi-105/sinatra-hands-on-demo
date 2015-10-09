@@ -5,8 +5,14 @@ source 'https://rubygems.org'
 gem 'sinatra'
 gem 'activerecord'
 gem 'sinatra-activerecord'
-gem 'sqlite3'
-gem 'pg'
 gem 'pry-rails'
 gem 'pry-byebug'
 gem 'awesome_print'
+
+group :development do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
