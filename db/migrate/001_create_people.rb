@@ -4,6 +4,7 @@ class CreatePeople < ActiveRecord::Migration
       t.string :name
       t.date :dob
       t.string :gender
+      t.string :gender
       t.integer :zipcode
     end
   end

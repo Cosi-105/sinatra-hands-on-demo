@@ -10,8 +10,6 @@ configure :production do
   puts "[production environment]"
   db = URI.parse(ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
 
-binding.pry
-
   ActiveRecord::Base.establish_connection(
       :adapter => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
       :host     => db.host,
