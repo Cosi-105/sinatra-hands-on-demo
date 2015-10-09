@@ -1,3 +1,5 @@
+require 'pry-byebug'
+
 # These Settings Establish the Proper Database Connection for Heroku Postgres
 # The environment variable DATABASE_URL should be in the following format:
 #     => postgres://{user}:{password}@{host}:{port}/path
@@ -7,6 +9,8 @@
 configure :production do
   puts "[production environment]"
   db = URI.parse(ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
+
+binding.pry
 
   ActiveRecord::Base.establish_connection(
       :adapter => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
