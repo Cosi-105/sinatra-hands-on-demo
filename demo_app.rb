@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'activerecord'
+require 'active_record'
 require './config/environments'
 require 'sinatra/activerecord'
 
