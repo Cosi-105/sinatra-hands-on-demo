@@ -7,5 +7,3 @@ require './models/person'
 require './models/registration'
 
 require 'pry-byebug'
-
-# ActiveRecord::Base.logger.level = 1
