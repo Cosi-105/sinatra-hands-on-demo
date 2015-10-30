@@ -1,6 +1,6 @@
 # Gemfile lists the gems and version numbers required for this app
 # Note: Always type "bundle" at command line after making a chance here
-ruby '2.0.0'
+ruby '2.2.2'
 source 'https://rubygems.org'
 
 gem 'sinatra'
@@ -17,5 +17,4 @@ end
 group :production do
   gem 'pg'
   gem 'puma'
-
 end
