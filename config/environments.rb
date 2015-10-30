@@ -7,8 +7,9 @@ require 'pry-byebug'
 # want to run your app locally
 
 configure :production do
-  puts "[production environment]"
-  db = URI.parse(ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
+  puts "[production environment: ENV=#{ENV['DATABASE_URL']}]"
+#  db = URI.parse(ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
+  ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
 
   ActiveRecord::Base.establish_connection(
       :adapter => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
