@@ -1,4 +1,3 @@
-#
 puts "[seeds.rb]"
 puts "[creating seed Persons]"
 Person.create(name: "John", dob: '12-12-2012', gender: 'f', zipcode: 12355)
