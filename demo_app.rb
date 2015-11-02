@@ -1,3 +1,5 @@
+puts ENV
+
 require 'sinatra'
 require 'active_record'
 require 'sinatra/activerecord'
