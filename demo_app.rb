@@ -1,4 +1,4 @@
-puts ENV
+puts ENV.inspect
 
 require 'sinatra'
 require 'active_record'
