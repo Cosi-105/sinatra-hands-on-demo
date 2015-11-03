@@ -1,4 +1,5 @@
 puts ENV.inspect
+require 'sinatra'
 set :environment, ENV["RACK_ENV"]
 
 require 'sinatra/activerecord'
