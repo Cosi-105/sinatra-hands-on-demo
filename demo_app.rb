@@ -1,3 +1,4 @@
+puts ENV.inspect
 require 'sinatra/activerecord'
 
 require './models/event'
