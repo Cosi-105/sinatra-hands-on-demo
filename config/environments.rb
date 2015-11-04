@@ -1,4 +1,5 @@
-puts "#{ENV['RACK_ENV']}, #{ENV['RAILS_ENV']}, #{ENV['SINATRA_ENV']}"
+puts "[Env: #{ENV['RACK_ENV']} #{ENV['RAILS_ENV']} #{ENV['SINATRA_ENV']}]"
+
 configure :development do
   puts "[running in development mode]"
 end
