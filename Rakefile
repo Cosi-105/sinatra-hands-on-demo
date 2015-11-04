@@ -1,4 +1,4 @@
-require './demo_app.rb'
+# require './demo_app.rb'
 require 'sinatra/activerecord/rake'
 require 'rake/testtask'
 
