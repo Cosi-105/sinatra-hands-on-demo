@@ -7,3 +7,7 @@ require './models/person'
 require './models/registration'
 
 require 'pry-byebug'
+
+get '/' do
+  "Hello World!"
+end
