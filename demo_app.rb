@@ -1,8 +1,6 @@
-puts ENV.inspect
 require 'sinatra'
-set :environment, ENV["RACK_ENV"]
-
 require 'sinatra/activerecord'
+require './config/environments'
 
 require './models/event'
 require './models/person'
