@@ -1,4 +1,3 @@
-# test_helper.rb
 require_relative '../demo_app'
 require 'minitest/autorun'
 require 'rack/test'
