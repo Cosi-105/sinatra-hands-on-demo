@@ -1,4 +1,4 @@
-puts "[Env: #{ENV['RACK_ENV']} #{ENV['RAILS_ENV']} #{ENV['SINATRA_ENV']}]"
+puts "[Env: #{ENV['RACK_ENV']}.#{ENV['RAILS_ENV']}.#{ENV['SINATRA_ENV']}]"
 
 configure :development do
   puts "[running in development mode]"
@@ -10,9 +10,7 @@ end
 
 configure :production do
   puts "[running in production mode]"
-  ActiveRecord::Base.establish_connection(
-    url: ENV['DATABASE_URL']
-  )
+  ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'])
 end
 
 configure :test do
