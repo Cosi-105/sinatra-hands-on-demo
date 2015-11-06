@@ -11,3 +11,7 @@ require 'pry-byebug'
 get '/' do
   "Hello World!"
 end
+
+get '/loaderio-b75252fc818e0fb0d9e3396bcd6d2c60/' do
+  "loaderio-b75252fc818e0fb0d9e3396bcd6d2c60"
+end
