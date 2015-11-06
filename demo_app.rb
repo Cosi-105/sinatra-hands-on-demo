@@ -10,6 +10,7 @@ require 'pry-byebug'
 
 get '/' do
   "Hello World!"
+  sleep(5000)
 end
 
 get '/loaderio-b75252fc818e0fb0d9e3396bcd6d2c60/' do
