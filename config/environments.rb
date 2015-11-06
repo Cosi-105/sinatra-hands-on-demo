@@ -10,9 +10,7 @@ end
 
 configure :production do
   puts "[running in production mode]"
-  ActiveRecord::Base.establish_connection(
-    url: ENV['DATABASE_URL']
-  )
+  ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'])
 end
 
 configure :test do
