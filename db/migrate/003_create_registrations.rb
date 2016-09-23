@@ -1,7 +1,7 @@
 # 003_create_registrations.rb
 # Registrations(person_id, event_id, status, comment)
 
-class CreateRegistrations < ActiveRecord::Migration
+class CreateRegistrations < ActiveRecord::Migration[4.2]
   def change
     create_table :registrations do |t|
       t.integer :person_id

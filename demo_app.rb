@@ -6,7 +6,7 @@ require './models/event'
 require './models/person'
 require './models/registration'
 
-require 'pry-byebug'
+require 'byebug'
 
 get '/' do
   "Hello World!"

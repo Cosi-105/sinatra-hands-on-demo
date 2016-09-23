@@ -15,29 +15,17 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.0)
-    awesome_print (1.6.1)
     builder (3.2.2)
     byebug (3.5.1)
       columnize (~> 0.8)
       debugger-linecache (~> 1.2)
       slop (~> 3.6)
-    coderay (1.1.0)
     columnize (0.9.0)
     debugger-linecache (1.2.0)
     i18n (0.7.0)
     json (1.8.2)
-    method_source (0.8.2)
     minitest (5.5.1)
     pg (0.18.1)
-    pry (0.10.1)
-      coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
-      slop (~> 3.4)
-    pry-byebug (3.0.1)
-      byebug (~> 3.4)
-      pry (~> 0.10)
-    pry-rails (0.3.3)
-      pry (>= 0.9.10)
     puma (2.14.0)
     rack (1.6.0)
     rack-protection (1.5.3)
@@ -63,10 +51,8 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
-  awesome_print
+  byebug
   pg
-  pry-byebug
-  pry-rails
   puma
   rack-test
   sinatra
@@ -74,4 +60,4 @@ DEPENDENCIES
   sqlite3
 
 BUNDLED WITH
-   1.10.6
+   1.12.5

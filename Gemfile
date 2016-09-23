@@ -1,14 +1,11 @@
 # Gemfile lists the gems and version numbers required for this app
 # Note: Always type "bundle" at command line after making a chance here
-ruby '2.2.2'
 source 'https://rubygems.org'
 
 gem 'sinatra'
 gem 'activerecord'
 gem 'sinatra-activerecord'
-gem 'pry-rails'
-gem 'pry-byebug'
-gem 'awesome_print'
+gem 'byebug'
 
 group :development, :test do
   gem 'sqlite3'
