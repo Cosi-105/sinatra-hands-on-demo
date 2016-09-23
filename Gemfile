@@ -8,6 +8,7 @@ gem 'sinatra-activerecord'
 gem 'byebug'
 
 group :development, :test do
+  gem 'rake'
   gem 'sqlite3'
   gem 'rack-test'
 end

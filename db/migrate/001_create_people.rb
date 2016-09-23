@@ -1,3 +1,5 @@
+puts ActiveRecord::VERSION::MAJOR, ActiveRecord::VERSION::MINOR
+
 class CreatePeople < ActiveRecord::Migration[4.2]
   def change
     create_table :people do |t|
