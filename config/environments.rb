@@ -1,3 +1,4 @@
+require 'byebug'
 puts "[Env: #{ENV['RACK_ENV']}.#{ENV['RAILS_ENV']}.#{ENV['SINATRA_ENV']}]"
 
 configure :development do
