@@ -1,12 +1,10 @@
 require 'sinatra'
-require 'active_record'
-require './config/environments'
-
+require 'sinatra/activerecord'
 require './models/event'
 require './models/person'
 require './models/registration'
+require 'pry-byebug'
 
-require 'byebug'
 
 get '/' do
   "<h2>Hello Brandeis: Cosi 105b 2017. Long weekend Coming!</h2>"
