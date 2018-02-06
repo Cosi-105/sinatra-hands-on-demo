@@ -4,6 +4,5 @@ class CreateEvents < ActiveRecord::Migration[5.1]
       t.string :name
       t.date :date
     end
-
   end
 end

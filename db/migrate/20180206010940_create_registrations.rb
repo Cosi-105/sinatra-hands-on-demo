@@ -6,6 +6,5 @@ class CreateRegistrations < ActiveRecord::Migration[5.1]
       t.string :status
       t.string :comment
     end
-
   end
 end

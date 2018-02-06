@@ -20,11 +20,6 @@ ActiveRecord::Schema.define(version: 20180206010940) do
     t.date "date"
   end
 
-  create_table "orders", id: :serial, force: :cascade do |t|
-    t.text "name"
-    t.integer "age"
-  end
-
   create_table "people", force: :cascade do |t|
     t.string "name"
     t.date "dob"

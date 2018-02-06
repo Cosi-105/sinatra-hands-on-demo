@@ -1,9 +1,9 @@
 require 'sinatra'
 require 'sinatra/activerecord'
+require 'pry-byebug'
 require './models/event'
 require './models/person'
 require './models/registration'
-require 'pry-byebug'
 
 
 get '/' do
