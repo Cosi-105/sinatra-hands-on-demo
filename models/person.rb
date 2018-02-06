@@ -1,4 +1,4 @@
 class Person < ActiveRecord::Base
-  has_many :registrations
-  has_many :events, through: :registrations
+  has_many :messages
+  has_many :hashtags, through: :messages
 end

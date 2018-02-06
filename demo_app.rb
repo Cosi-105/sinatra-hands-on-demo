@@ -1,9 +1,9 @@
 require 'sinatra'
 require 'sinatra/activerecord'
 require 'pry-byebug'
-require './models/event'
+require './models/hashtag'
 require './models/person'
-require './models/registration'
+require './models/message'
 
 
 get '/' do

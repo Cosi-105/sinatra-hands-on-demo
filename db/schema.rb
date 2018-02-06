@@ -15,9 +15,15 @@ ActiveRecord::Schema.define(version: 20180206010940) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "events", force: :cascade do |t|
+  create_table "hashtags", force: :cascade do |t|
     t.string "name"
-    t.date "date"
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.integer "person_id"
+    t.integer "hashtag_id"
+    t.string "status"
+    t.string "text"
   end
 
   create_table "people", force: :cascade do |t|
@@ -25,13 +31,6 @@ ActiveRecord::Schema.define(version: 20180206010940) do
     t.date "dob"
     t.string "gender"
     t.integer "zipcode"
-  end
-
-  create_table "registrations", force: :cascade do |t|
-    t.integer "person_id"
-    t.integer "event_id"
-    t.string "status"
-    t.string "comment"
   end
 
 end
